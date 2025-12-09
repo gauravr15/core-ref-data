@@ -76,4 +76,7 @@ public class CoreFormMetadata {
     
     @Column(name = "input_type")
     private String inputType;
+    
+    @Column(name = "resource")
+    private String resource;
 }
