@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
-COPY target/core-ref-0.0.1-SNAPSHOT.jar .
+COPY target/core-ref-data-0.0.1-SNAPSHOT.jar .
 
 EXPOSE 8012
 
@@ -16,4 +16,4 @@ ENV SPRING_PROFILES_ACTIVE=production,global
 ENV MANAGEMENT_METRICS_ENABLE_ALL=false
 ENV MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE=health,info
 
-CMD ["java","-Xms128m","-Xmx256m","-Dspring.main.allow-bean-definition-overriding=true","-jar","core-ref-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-Xms128m","-Xmx256m","-Dspring.main.allow-bean-definition-overriding=true","-jar","core-ref-data-0.0.1-SNAPSHOT.jar"]
